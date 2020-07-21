@@ -3,7 +3,6 @@ Assignment –7
 Summarizing Data with Aggregate Functions.
 
 1) Write a query that counts all orders for October 3.
-
 	SELECT COUNT(*) FROM orders 
 	WHERE odate='1990-10-03';
 
@@ -32,5 +31,6 @@ begins with G.
 6) Write a query that counts the number of salespeople registering orders for each
 day. (If a salesperson has more than one order on a given day, he or she should be
 counted only once.)
+
 
 	select Snum,count(*) from orders group by Snum ;
