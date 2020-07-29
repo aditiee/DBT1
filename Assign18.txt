@@ -24,3 +24,6 @@ enforced link between the current order and the one referenced
 
 
 ALTER TABLE cityorders ADD FOREIGN KEY(cnum) REFERENCES Customers(cnum);
+alter table orders add constraint pk_onum primary key(onum);
+alter table orders add column prev int;
+alter table orders add 	constraint foreign key(prev) references orders(onum);
